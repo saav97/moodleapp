@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget android-versionCode="44000" id="com.moodle.moodlemobile" ios-CFBundleVersion="4.4.0.0" version="4.4.0" versionCode="44000" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>Moodle</name>
-    <description>Moodle official app</description>
-    <author email="mobile@moodle.com" href="http://moodle.com">Moodle Mobile team</author>
+<widget android-versionCode="44000" id="ar.edu.cet30.campus" ios-CFBundleVersion="4.4.0.0" version="4.4.0" versionCode="44000" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>CET 30 Móvil</name>
+    <description>Aplicación móvil de la Plataforma CET 30 Campus Virtual</description>
+    <author email="jotaebenitez@gmail.com" href="https://campus.cet30.edu.ar">Tecnologías Educativas</author>
     <content src="index.html" />
     <access origin="*" />
     <access launch-external="yes" origin="tel:*" />
@@ -57,7 +57,7 @@
         <param name="ios-package" onload="true" value="CDVStatusBar" />
     </feature>
     <platform name="android">
-        <preference name="AndroidWindowSplashScreenAnimatedIcon" value="resources/android/android-splash.xml" />
+        <preference name="AndroidWindowSplashScreenAnimatedIcon" value="resources/android/splash/drawable-land-xxxhdpi-screen.png" />
         <preference name="AndroidWindowSplashScreenBackground" value="#FFFFFF" />
         <preference name="AndroidWindowSplashScreenIconBackgroundColor" value="#FFFFFF" />
         <resource-file src="google-services.json" target="app/google-services.json" />
@@ -76,7 +76,14 @@
         <config-file parent="/*" target="AndroidManifest.xml">
             <uses-feature android:name="android.hardware.bluetooth" android:required="false" />
             <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+            <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
         </config-file>
+        <icon density="ldpi" src="resources/android/icon/drawable-ldpi-icon.png" />
+        <icon density="mdpi" src="resources/android/icon/drawable-mdpi-icon.png" />
+        <icon density="hdpi" src="resources/android/icon/drawable-hdpi-icon.png" />
+        <icon density="xhdpi" src="resources/android/icon/drawable-xhdpi-icon.png" />
+        <icon density="xxhdpi" src="resources/android/icon/drawable-xxhdpi-icon.png" />
+        <icon density="xxxhdpi" src="resources/android/icon/drawable-xxxhdpi-icon.png" />
     </platform>
     <platform name="ios">
         <resource-file src="GoogleService-Info.plist" />

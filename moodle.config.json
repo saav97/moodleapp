@@ -1,13 +1,13 @@
 {
-    "app_id": "com.moodle.moodlemobile",
-    "appname": "Moodle Mobile",
+    "app_id": "ar.edu.campus.cet30",
+    "appname": "CET 30 Mobile",
     "versioncode": 44000,
     "versionname": "4.4.0",
     "cache_update_frequency_usually": 420000,
     "cache_update_frequency_often": 1200000,
     "cache_update_frequency_sometimes": 3600000,
     "cache_update_frequency_rarely": 43200000,
-    "default_lang": "en",
+    "default_lang": "es",
     "languages": {
         "af": "Afrikaans",
         "ar": "العربية",
@@ -70,14 +70,14 @@
     "wsservice": "moodle_mobile_app",
     "demo_sites": {
         "student": {
-            "url": "https://school.moodledemo.net",
-            "username": "student",
-            "password": "moodle"
+            "url": "https://campus.cet30.edu.ar",
+            "username": "estudiante",
+            "password": "cet30"
         },
         "teacher": {
-            "url": "https://school.moodledemo.net",
-            "username": "teacher",
-            "password": "moodle"
+            "url": "https://campus.cet30.edu.ar",
+            "username": "profesor",
+            "password": "cet30"
         }
     },
     "defaultZoomLevel": "none",
@@ -87,7 +87,15 @@
         "high": 120
     },
     "customurlscheme": "moodlemobile",
-    "sites": [],
+    "sites": [
+        {
+            "name": "Nombre_Corto",
+            "alias": "Nombre_Completo",
+            "url": "https://campus.cet30.edu.ar",
+            "staging": false
+        }
+
+    ],
     "multisitesdisplay": "",
     "sitefindersettings": {},
     "onlyallowlistedsites": false,
@@ -100,7 +108,7 @@
     "forceLoginLogo": false,
     "ioswebviewscheme": "moodleappfs",
     "appstores": {
-        "android": "com.moodle.moodlemobile",
+        "android": "ar.edu.cet30.campus",
         "ios": "id633359593"
     },
     "wsrequestqueuelimit": 10,
